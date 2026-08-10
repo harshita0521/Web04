@@ -1,63 +1,63 @@
 /* For All The Tags */
 
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    font-family: Arial,sans-serif;
+body {
+    font-family: Arial, sans-serif;
     color: #222;
     background-color: #f7f7f7;
     line-height: 1.6;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-button{
+button {
     font-family: inherit;
     cursor: pointer;
 }
 
-img{
+img {
     width: 100%;
     display: block;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
-.section{
-    padding: 80px 0px;
+.section {
+    padding: 80px 0;
 }
 
 /* Navbar */
 
-.header{
+.header {
     background-color: white;
     height: 75px;
     position: sticky;
-    top: 0%;
+    top: 0;
     z-index: 1000;
     border-bottom: 1px solid #eee;
 }
 
-.nav{
+.nav {
     width: 90%;
     max-width: 1200px;
     height: 75px;
@@ -69,7 +69,7 @@ ul{
 
 /* Logo */
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -77,14 +77,15 @@ ul{
     font-weight: bold;
 }
 
-.logo i{
+.logo i {
     color: #ff7a00;
     font-size: 30px;
 }
 
-.logo b{
+.logo b {
     color: #138808;
 }
+
 
 /* Nav Links */
 
@@ -103,34 +104,41 @@ ul{
 .nav-list a.active {
     color: #ff7a00;
 }
+
+
 /* Menu */
 
-.menu{
+.menu {
     display: none;
     border: none;
     background: none;
     font-size: 28px;
 }
 
+
 /* Hero */
 
-.hero{
+.hero {
     min-height: 650px;
     display: flex;
     align-items: center;
     color: white;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.45)),url("Images/hero.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.45)
+        ), url("Images/hero.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.hero-content{
+.hero-content {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
-.small-title{
+.small-title {
     color: #ff9933;
     font-size: 14px;
     font-weight: bold;
@@ -138,32 +146,33 @@ ul{
     margin-bottom: 15px;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 65px;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
-.hero h1 span{
+.hero h1 span {
     display: block;
     color: #ff9933;
 }
 
-.hero-text{
+.hero-text {
     max-width: 550px;
     color: #eee;
     font-size: 17px;
     margin-bottom: 30px;
 }
 
+
 /* Buttons */
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
     gap: 15px;
 }
 
-.btn{
+.btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -174,28 +183,29 @@ ul{
     transition: 0.3s;
 }
 
-.orange-btn{
+.orange-btn {
     background-color: #ff7a00;
     color: white;
 }
 
-.orange-btn:hover{
+.orange-btn:hover {
     background-color: #e66d00;
 }
 
-.white-btn{
+.white-btn {
     background-color: #138808;
     color: white;
 }
 
-.white-btn:hover{
-    background-color:#106d07;
+.white-btn:hover {
+    background-color: #106d07;
     color: white;
 }
 
+
 /* Scroll */
 
-.scroll{
+.scroll {
     position: absolute;
     bottom: 25px;
     left: 50%;
@@ -206,10 +216,10 @@ ul{
     align-items: center;
 }
 
-/* FOR MOBILE SCREEN */
 
-@media (mX-width: 600px){
-    @media (max-width: 768px) {
+/* MOBILE */
+
+@media (max-width: 600px) {
 
     .header {
         height: 65px;
@@ -219,7 +229,7 @@ ul{
         height: 65px;
     }
 
-    /* Menu button */
+    /* Menu Button */
 
     .menu {
         display: block;
@@ -229,7 +239,7 @@ ul{
         color: #003366;
     }
 
-    /* Dropdown menu */
+    /* Dropdown Menu */
 
     .nav-list {
         display: none;
@@ -253,5 +263,24 @@ ul{
         padding: 15px 5%;
         border-bottom: 1px solid #eeeeee;
     }
-}
+
+
+    /* Mobile Hero */
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
