@@ -216,10 +216,139 @@ ul {
     align-items: center;
 }
 
+/* Introduction Section */
+
+.into-section{
+    padding: 80px 0px;
+    background-color: #f7f7f7;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section Title */
+
+.title{
+    margin-bottom: 45px;
+}
+
+.title p{
+    color: #ff7a00;
+    font-size: 13px;
+    font-weight: bold; 
+    letter-spacing: 2;
+    margin-bottom: 8px;
+}
+
+.title h2{
+    font-size: 42px;
+    line-height: 1.2;
+    color: #222;
+}
+
+.title h2 span{
+    color: #138808;
+}
+  
+/* Introduction Box */
+
+.intro-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Image */
+
+.intro-img{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.intro-img img{
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.intro-img:hover img{
+    transform: scale(1.03);
+}
+
+/* Text */
+
+.intro-text h3{
+    font-size: 28px;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.intro-text p{
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.intro-text .big-text{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    
+}
+
+/* Read More Button */
+
+.read-btn{
+    border: none;
+    background: none;
+    color: #ff7a00;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.read-btn i{
+    transition: 0.3s;
+}
+
+/* Hidden More text */
+
+.more-text{
+    display: none;
+    margin-top: 10px;
+}
+
+/* Overview Link */
+
+.link{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 12px;
+    color: #138808;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link:hover{
+    color: #ff7a00;
+}
 
 /* MOBILE */
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     .header {
         height: 65px;
@@ -283,4 +412,30 @@ ul {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .intro-section{
+        padding: 60px 0;
+    }
+    .title h2{
+        font-size: 34px;
+    }
+
+    .intro-box{
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .intro-img img{
+        height: 300px;
+    }
+
+    .intro-text h3{
+        font-size: 25px;
+    }
+
+    .intro-text .big-text{
+        font-size: 17px;
+    }
+
+
 }
