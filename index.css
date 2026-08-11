@@ -346,9 +346,54 @@ ul {
     color: #ff7a00;
 }
 
-/* MOBILE */
+/* Medal Section */
 
-@media (max-width: 650px) {
+.medals{
+    padding: 45px 0px;
+    background-color: #003366;
+}
+
+.medal-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.medal{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 20px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.medal:hover{
+    transform: translateY(-5px);
+}
+
+.medal i{
+    font-size: 35px;
+    color: #ff7a00;
+}
+
+.medal h3{
+    font-size: 32px;
+    line-height: 1;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.medal p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ------- FOR MOBILE SCREEN ------- */
+
+@media (max-width: 680px) {
 
     .header {
         height: 65px;
@@ -437,5 +482,28 @@ ul {
         font-size: 17px;
     }
 
+    .medals{
+        padding: 35px 0px;
+    }
 
+    .medal-box{
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .medal{
+        padding: 20px 15px;
+        gap: 10px;
+    }
+
+    .medal i{
+        font-size: 28px;
+    }
+    .medal h3{
+        font-size: 25px;
+    }
+
+    .medal p{
+        font-size: 12px;
+    }
 }
