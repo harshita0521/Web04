@@ -219,7 +219,7 @@ ul {
 
 /* Introduction Section */
 
-.into-section{
+.intro-section{
     padding: 80px 0px;
     background-color: #f7f7f7;
 }
@@ -236,11 +236,11 @@ ul {
     margin-bottom: 45px;
 }
 
-.title p{
+.section-label {
     color: #ff7a00;
     font-size: 13px;
-    font-weight: bold; 
-    letter-spacing: 2;
+    font-weight: bold;
+    letter-spacing: 2px;
     margin-bottom: 8px;
 }
 
@@ -392,6 +392,149 @@ ul {
     color: #555;
 }
 
+/* Journey Section */
+
+.journey{
+    background-color: white;
+}
+
+/* Journey Title */
+
+.journey .title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Small Title */
+
+.journey-label{
+    color: #ff7a00;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Main Heading */
+
+.journey .title h2{
+    font-size: 40px;
+    color: #222;
+    margin-top: 8px;
+}
+
+/* Green Word */
+
+.journey .title h2 span{
+    color: #138808;
+}
+
+/* Description */
+
+.sub-text {
+    color: #666;
+    font-size: 15px;
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+/* Journey Cards */
+
+.journey-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+/* Card */
+.journey-card{
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 30px 25px;
+    border: 1px solid #eee;
+    border: 8px;
+}
+
+/* Card Number */
+.card-number{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #aaa;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Card Icon */
+.card-icon{
+    width: 55px;
+    height: 55px;
+    background-color: #fff1e6;
+    color: #ff7a00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-icon i{
+    font-size: 27px;
+}
+
+/* Card Heading */
+.journey-card h3{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+/* Card Paragraph */
+.journey-card p{
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+/* Read Story Button */
+.story-btn{
+    border: none;
+    background: none;
+    color: #138808;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Story Content */
+.story{
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.story p{
+    color: #555;
+    font-size: 14px;
+}
+
+/* Explore Full Journey Button */
+
+.center{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.dark-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #222;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
 /* ------- FOR MOBILE SCREEN ------- */
 
 @media (max-width: 680px) {
@@ -506,5 +649,30 @@ ul {
 
     .medal p{
         font-size: 12px;
+    }
+
+    .journey{
+        padding: 60px 0px;
+    }
+
+    .journey .title h2{
+        font-size: 32px;
+    }
+
+    .sub-text{
+        font-size: 14px;
+    }
+
+    .journey-box{
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .journey-card{
+        padding: 25px 20px;
+    }
+
+    .journey-card h3{
+        font-size: 21px;
     }
 }
