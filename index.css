@@ -451,7 +451,7 @@ ul {
     background-color: #f7f7f7;
     padding: 30px 25px;
     border: 1px solid #eee;
-    border: 8px;
+    border-radius: 8px;
 }
 
 /* Card Number */
@@ -535,9 +535,120 @@ ul {
     font-size: 14px;
     font-weight: bold;
 }
+
+/* Achievement Section */
+
+.achievement {
+    padding: 80px 0px;
+    background-color: #f7f7f7;
+}
+
+.achievement .title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.achievement-label {
+    color: #ff7a00;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.achievement .title h2{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.achievement .title h2 span{
+    color: #138808;
+}
+
+.achievement .sub-text{
+    color: #666;
+    font-size: 15px;
+    max-width: 550px;
+}
+
+.achievement-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.achievement-card{
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.achievement-img{
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.achievement-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.achievement-img span{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background-color: #ff7a00;
+    color: white;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.achievements-text {
+    padding: 22px;
+}
+
+.achievement-type {
+    color: #ff7a00;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.achievements-text h3 {
+    font-size: 21px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.achievement-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.achievements-text a {
+    color: #138808;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.achievement .center {
+    text-align: center;
+    margin-top: 40px;
+}
 /* ------- FOR MOBILE SCREEN ------- */
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
 
     .header {
         height: 65px;
@@ -675,4 +786,40 @@ ul {
     .journey-card h3{
         font-size: 21px;
     }
+
+    .achievement {
+        padding: 60px 0;
+    }
+
+
+    .achievement .title h2 {
+        font-size: 32px;
+    }
+
+
+    .achievement .sub-text {
+        font-size: 14px;
+    }
+
+
+    .achievement-box {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .achievement-img {
+        height: 230px;
+    }
+
+
+    .achievements-text {
+        padding: 20px;
+    }
+
+
+    .achievements-text h3 {
+        font-size: 20px;
+    }
+
 }
